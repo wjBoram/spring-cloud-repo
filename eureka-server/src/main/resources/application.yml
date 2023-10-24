@@ -1,0 +1,15 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  client:
+    # eureka? registry? ???? ?? ??
+    register-with-eureka: false
+    # eureka? registry? ?? ??? ???? ?? ??
+    fetch-registry: false
+
+

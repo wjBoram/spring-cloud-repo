@@ -1,7 +1,7 @@
-#??? ???
+#Test user-service
 
 server:
-  port: 0 # ?? ?? ??
+  port: 0 # Ramdom port
 
 spring:
   application:
@@ -11,11 +11,11 @@ eureka:
   instance:
     instance-id:  ${spring.cloud.client.hostname}:${spring.application.instance_id:${random.value}}
   client:
-    # Eureka ?? ??
+    # Eureka Server insert
     register-with-eureka: true
-    # Eureka ????? ???? ??? ????? ???? ??
+    # Eureka server instance info time to return
     fetch-registry: true
-    # Eureka ?? ?? ??
+    # Eureka server location insert
     service-url:
-      # endpoint ??
+      # endpoint
       defaultZone: http://127.0.0.1:9090/eureka

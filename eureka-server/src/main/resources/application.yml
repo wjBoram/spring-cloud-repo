@@ -1,4 +1,4 @@
-#test
+# Test Eureka-service
 
 server:
   port: 9090
